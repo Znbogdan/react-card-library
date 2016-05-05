@@ -1,0 +1,99 @@
+.NoteEditor {
+  width: 100%;
+  max-width: 600px;
+  padding: 16px;
+  margin: 16px auto;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.NoteEditor__text {
+  width: 100%;
+  resize: none;
+  margin: 5px;
+  font-size: 14px;
+  border: none;
+  font-weight: 300;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.NoteEditor__title {
+  display:block;
+  padding: 10px 0;
+  width: 100%;
+  resize: none;
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  font-weight: 300;
+  border-bottom: solid 1px #1abc9c;
+  transition: all 0.3s cubic-bazier(.64, .09, .08, 1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #1abc9c 4%);
+  background-position: -650px 0;
+  background-repeat: no-repeat;
+  color: darken(#1abc9c, 20%);
+  background-size: 650px 100%;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: #1abc9c;
+      font-size: 11px;
+      transform: translateY(-15px);
+      visibility: visible !important;
+    }
+  }
+}
+
+input::-webkit-input-placeholder{
+  font-family: 'roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.NoteLink__title {
+  display:block;
+  padding: 10px 0;
+  width: 100%;
+  resize: none;
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: none;
+  font-weight: 300;
+  border-bottom: solid 1px #1abc9c;
+  transition: all 0.3s cubic-bazier(.64, .09, .08, 1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, #1abc9c 4%);
+  background-position: -650px 0;
+  background-repeat: no-repeat;
+  color: darken(#1abc9c, 20%);
+  background-size: 650px 100%;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: #1abc9c;
+      font-size: 11px;
+      transform: translateY(-15px);
+      visibility: visible !important;
+    }
+  }
+
+}
+
+.NoteEditor__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input{
+
+}
